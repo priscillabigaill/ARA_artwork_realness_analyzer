@@ -1,0 +1,23 @@
+# version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./ARA_Frontend-main  # Path to your frontend folder
+    ports:
+      - "5173:5173"  # Map the container's port 5173 to the host's port 5173
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./ARA_Backend-main  # Path to your backend folder
+    ports:
+      - "8000:8000"  # Map the container's port 8000 to the host's port 8000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
