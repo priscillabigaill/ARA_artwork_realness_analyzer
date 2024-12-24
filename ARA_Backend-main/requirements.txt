@@ -1,0 +1,15 @@
+fastapi==0.115.6
+numpy==1.23.5
+# Pillow==9.2.0
+Pillow==11.0.0
+pydantic==2.10.3
+python-dotenv==1.0.1
+SQLAlchemy==2.0.30
+supabase==2.10.0
+tensorflow==2.16.2
+# tensorflow_macos
+uvicorn==0.15.0
+psycopg2-binary
+python-multipart
+
+
